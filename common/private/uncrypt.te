@@ -1,0 +1,2 @@
+allow uncrypt self:capability { fowner sys_admin };
+allow uncrypt ota_package_file:file w_file_perms;
