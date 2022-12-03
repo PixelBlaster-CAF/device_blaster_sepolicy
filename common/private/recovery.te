@@ -1,7 +1,7 @@
 recovery_only(`
-userdebug_or_eng(`
-permissive recovery;
-')
+
+# Enable adb root
+set_prop(recovery, adbd_private_prop)
 
 # Volume manager
 allow recovery block_device:dir create_dir_perms;
