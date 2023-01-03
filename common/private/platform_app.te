@@ -1,2 +1,5 @@
 # Allow LiveDisplay HAL service to be found
 hal_client_domain(platform_app, hal_lineage_livedisplay)
+
+# Allow storage access to files app
+allow platform_app mnt_pass_through_file:dir { getattr search };
